@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Agenda — Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #FAFAF8;
+            --text: #1A1A1A;
+            --muted: #6B6B6B;
+            --accent: #191919;
+            --border: #E8E6E1;
+            --card-bg: #FFFFFF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 80px 24px 120px;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--accent);
+        }
+
+        .effective-date {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 48px;
+        }
+
+        .summary-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px 28px 20px;
+            margin-bottom: 48px;
+        }
+
+        .summary-card h2 {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+
+        .summary-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px 0;
+        }
+
+        .summary-item .check {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+        }
+
+        .summary-item .check svg {
+            width: 12px;
+            height: 12px;
+        }
+
+        .summary-item p {
+            font-size: 15px;
+            color: var(--text);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 12px;
+            color: var(--accent);
+        }
+
+        section p {
+            font-size: 15px;
+            color: #444;
+            margin-bottom: 12px;
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 48px 0;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: var(--muted);
+            padding-top: 24px;
+        }
+
+        footer a {
+            color: var(--muted);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 48px 20px 80px; }
+            h1 { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="badge">The Agenda</span>
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">Effective May 7, 2026</p>
+
+        <div class="summary-card">
+            <h2>At a glance</h2>
+            <div class="summary-item">
+                <div class="check">
+                    <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <p>All data is stored locally on your device</p>
+            </div>
+            <div class="summary-item">
+                <div class="check">
+                    <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <p>No data is transmitted to any server</p>
+            </div>
+            <div class="summary-item">
+                <div class="check">
+                    <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <p>No third-party analytics or tracking</p>
+            </div>
+            <div class="summary-item">
+                <div class="check">
+                    <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <p>No account or sign-up required</p>
+            </div>
+        </div>
+
+        <section>
+            <h3>What data the app stores</h3>
+            <p>The Agenda stores workout sessions, nutrition logs, body weight entries, streak history, and profile information. All of this data is saved using on-device storage (UserDefaults) and never leaves your phone.</p>
+            <p>The home screen widget accesses a shared on-device container to display your workout and nutrition status. This data stays entirely on your device.</p>
+        </section>
+
+        <section>
+            <h3>Data collection and sharing</h3>
+            <p>The Agenda does not collect, transmit, or share any personal data. The app makes zero network requests. There are no servers, no cloud storage, and no external services of any kind.</p>
+        </section>
+
+        <section>
+            <h3>Third-party services</h3>
+            <p>The Agenda uses no third-party frameworks, SDKs, or services. It is built entirely with Apple's first-party frameworks: SwiftUI, Charts, WidgetKit, and UserNotifications.</p>
+        </section>
+
+        <section>
+            <h3>Notifications</h3>
+            <p>The app may send local notifications to remind you about workouts or nutrition. These notifications are scheduled entirely on your device and do not involve any external push notification service.</p>
+        </section>
+
+        <section>
+            <h3>Data deletion</h3>
+            <p>Since all data is stored locally on your device, you can delete it at any time by deleting the app. No data will remain on any server because none was ever sent to one.</p>
+        </section>
+
+        <section>
+            <h3>Children's privacy</h3>
+            <p>The Agenda does not collect personal information from anyone, including children under the age of 13.</p>
+        </section>
+
+        <section>
+            <h3>Changes to this policy</h3>
+            <p>If this privacy policy is updated, the revised version will be posted on this page with an updated effective date. Because the app does not collect data, there is no way to notify users directly of changes.</p>
+        </section>
+
+        <section>
+            <h3>Contact</h3>
+            <p>If you have questions about this privacy policy, you can reach the developer at <a href="mailto:isaiah.newbury@gmail.com" style="color: var(--accent);">isaiah.newbury@gmail.com</a>.</p>
+        </section>
+
+        <div class="divider"></div>
+
+        <footer>
+            <p>&copy; 2026 Isaiah Newbury. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
