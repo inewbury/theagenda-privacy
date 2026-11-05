@@ -143,13 +143,33 @@
             .container { padding: 48px 20px 80px; }
             h1 { font-size: 32px; }
         }
+
+        section ul {
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        section li {
+            font-size: 15px;
+            color: #444;
+            margin-bottom: 8px;
+        }
+
+        section a {
+            color: var(--accent);
+            text-underline-offset: 2px;
+        }
+
+        footer p + p {
+            margin-top: 8px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <span class="badge">The Agenda</span>
         <h1>Privacy Policy</h1>
-        <p class="effective-date">Effective May 7, 2026</p>
+        <p class="effective-date">Effective November 5, 2026 &middot; Version 2026-11</p>
 
         <div class="summary-card">
             <h2>At a glance</h2>
@@ -157,72 +177,122 @@
                 <div class="check">
                     <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </div>
-                <p>All data is stored locally on your device</p>
+                <p>Your account backs up and syncs your training. It's for adults 18 and over.</p>
             </div>
             <div class="summary-item">
                 <div class="check">
                     <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </div>
-                <p>No data is transmitted to any server</p>
+                <p>We never sell your data or use it for advertising</p>
             </div>
             <div class="summary-item">
                 <div class="check">
                     <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </div>
-                <p>No third-party analytics or tracking</p>
+                <p>No third-party analytics, advertising or tracking. Our own analytics only if you opt in.</p>
             </div>
             <div class="summary-item">
                 <div class="check">
                     <svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6L5 8.5L9.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </div>
-                <p>No account or sign-up required</p>
+                <p>Export your data or delete your account at any time, in the app</p>
             </div>
         </div>
 
         <section>
-            <h3>What data the app stores</h3>
-            <p>The Agenda stores workout sessions, nutrition logs, body weight entries, streak history, and profile information. All of this data is saved using on-device storage (UserDefaults) and never leaves your phone.</p>
-            <p>The home screen widget accesses a shared on-device container to display your workout and nutrition status. This data stays entirely on your device.</p>
+            <h3>Who we are</h3>
+            <p>The Agenda: Strength (&ldquo;the app&rdquo;) is made by Isaiah Newbury (&ldquo;we&rdquo;, &ldquo;us&rdquo;). This policy explains what the app collects, why, who processes it, and the choices you have. Our <a href="consumer-health-data/">Consumer Health Data Privacy Policy</a> gives more detail about health data and is part of this policy.</p>
         </section>
 
         <section>
-            <h3>Data collection and sharing</h3>
-            <p>The Agenda does not collect, transmit, or share any personal data. The app makes zero network requests. There are no servers, no cloud storage, and no external services of any kind.</p>
+            <h3>What we collect</h3>
+            <p>When you have an account, the app backs up the following to our servers:</p>
+            <ul>
+                <li><strong>Account details from Sign in with Apple:</strong> a unique identifier for your Apple Account and an email address (your own, or a private relay address if you choose Hide My Email). We also keep a Sign in with Apple token, used only to revoke the app's access when you delete your account. Apple may share your name the first time you sign in; the app keeps it on your iPhone only, to suggest it for your profile.</li>
+                <li><strong>Profile:</strong> first and last name, age, sex, height, weight, goal and activity level.</li>
+                <li><strong>Training:</strong> workout sessions (date, program and day, exercises, sets, reps, weights, duration and notes), the program days you customize, and your place in your program.</li>
+                <li><strong>Nutrition:</strong> daily calories, protein, carbohydrates and fat.</li>
+                <li><strong>Body weight</strong> entries.</li>
+                <li><strong>Settings:</strong> appearance, accent color, and reminder times.</li>
+                <li><strong>Consent records:</strong> each answer you give (that you're 18 or older, your agreement to these policies, health data backup, and analytics), with the policy version, when you answered, the app version and where in the app you answered.</li>
+                <li><strong>Technical logs:</strong> when the app contacts our servers, our hosting provider records technical details such as IP address, time and the type of request, for security and troubleshooting.</li>
+            </ul>
+            <p>We don't collect your location, contacts, photos, advertising identifier, or data from Apple Health or other apps.</p>
         </section>
 
         <section>
-            <h3>Third-party services</h3>
-            <p>The Agenda uses no third-party frameworks, SDKs, or services. It is built entirely with Apple's first-party frameworks: SwiftUI, Charts, WidgetKit, and UserNotifications.</p>
+            <h3>How we use it</h3>
+            <ul>
+                <li>To provide your account: back up your training and keep it in sync across your devices.</li>
+                <li>To keep your account secure and the service working.</li>
+                <li>To record and honor your privacy choices.</li>
+                <li><strong>Only if you turn on Analytics:</strong> aggregated analysis of workout, nutrition and body data to improve the programs. Analytics never includes your name or your notes. You can turn it off at any time in Settings.</li>
+                <li>To answer you when you contact us.</li>
+            </ul>
+            <p>We don't sell your data, share it for advertising, or use it to build profiles for anyone else.</p>
         </section>
 
         <section>
-            <h3>Notifications</h3>
-            <p>The app may send local notifications to remind you about workouts or nutrition. These notifications are scheduled entirely on your device and do not involve any external push notification service.</p>
+            <h3>Data on your iPhone</h3>
+            <p>The app also keeps your data on your iPhone, so it works offline. The home screen widget reads a shared on-device container to show your workout and nutrition status, and reminders are scheduled on your iPhone as local notifications. Data on your iPhone is included in your iPhone or iCloud backups, according to your device's settings.</p>
+            <p>Without an account (if you're under 18, or in app versions before 1.4) your data stays on your iPhone and nothing is sent to our servers.</p>
         </section>
 
         <section>
-            <h3>Data deletion</h3>
-            <p>Since all data is stored locally on your device, you can delete it at any time by deleting the app. No data will remain on any server because none was ever sent to one.</p>
+            <h3>Who processes your data</h3>
+            <ul>
+                <li><strong>Supabase, Inc.</strong> hosts our database and sign-in service, in the United States, as our processor under its Data Processing Addendum. It processes your data only to provide that service to us.</li>
+                <li><strong>Apple</strong> provides Sign in with Apple and handles App Store purchases under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. We never receive your payment details.</li>
+            </ul>
+            <p>We don't share your data with anyone else, except where the law requires it.</p>
         </section>
 
         <section>
-            <h3>Children's privacy</h3>
-            <p>The Agenda does not collect personal information from anyone, including children under the age of 13.</p>
+            <h3>Health data</h3>
+            <p>Your profile, training, nutrition and body weight are health data. We collect them only with your consent, to back them up and sync them. You can turn off health data backup at any time in Settings &rarr; Privacy: backup pauses, your training stays on your iPhone, and what's already backed up stays in your account until you delete it. See the <a href="consumer-health-data/">Consumer Health Data Privacy Policy</a> for your rights over this data.</p>
+        </section>
+
+        <section>
+            <h3>How long we keep it</h3>
+            <p>We keep your data for as long as you have an account. When you delete an item, our servers keep only a marker that it was deleted, with none of its content, so your other devices remove it too. Those markers are removed after 180 days.</p>
+            <p>When you delete your account, everything we hold for it is deleted from our servers, including your consent records, and the app's Sign in with Apple access is revoked. Our hosting provider, Supabase, makes routine backups as part of its service; we don't make or keep our own copies of your data. Deleted data can stay in those backups until Supabase's routine schedule replaces them. Technical logs are kept by our hosting provider for a limited period and then deleted.</p>
+        </section>
+
+        <section>
+            <h3>Your choices</h3>
+            <ul>
+                <li><strong>See and correct:</strong> your data is in the app, and you can edit your profile and entries there.</li>
+                <li><strong>Export:</strong> Settings &rarr; Privacy &rarr; Export My Data makes a file with your profile, settings, workouts, nutrition, body weight, customized days and privacy choices.</li>
+                <li><strong>Delete:</strong> Settings &rarr; Privacy &rarr; Delete Account deletes your account and its data from our servers and from your iPhone.</li>
+                <li><strong>Change consent:</strong> turn health data backup or Analytics on or off in Settings &rarr; Privacy.</li>
+                <li><strong>Contact us</strong> for anything else, or if you can't do one of these in the app.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Children</h3>
+            <p>Accounts are for people 18 and older. Someone under 18 can use the app on their iPhone without an account, and then nothing is sent to our servers. We don't knowingly collect data from anyone under 18; if we learn that we have, we delete it.</p>
+        </section>
+
+        <section>
+            <h3>Security</h3>
+            <p>Data travels between the app and our servers encrypted (HTTPS). Each account can read and change only its own data, which our database enforces. Your sign-in session is stored in your iPhone's Keychain.</p>
         </section>
 
         <section>
             <h3>Changes to this policy</h3>
-            <p>If this privacy policy is updated, the revised version will be posted on this page with an updated effective date. Because the app does not collect data, there is no way to notify users directly of changes.</p>
+            <p>When we change this policy, we'll post the new version here with a new version number and effective date.</p>
         </section>
 
         <section>
             <h3>Contact</h3>
-            <p>If you have questions about this privacy policy, you can reach the developer at <a href="mailto:isaiah.newbury@gmail.com" style="color: var(--accent);">isaiah.newbury@gmail.com</a>.</p>
+            <p>Questions or requests about your data: <a href="mailto:theagenda.support@gmail.com">theagenda.support@gmail.com</a>.</p>
         </section>
 
         <div class="divider"></div>
 
         <footer>
+            <p><a href="consumer-health-data/">Consumer Health Data Privacy Policy</a></p>
             <p>&copy; 2026 Isaiah Newbury. All rights reserved.</p>
         </footer>
     </div>
